@@ -95,7 +95,34 @@ def display_logo2():
     
 def display_logo():
     colorama.init()  
-    logo = 
+    logo = """ 
+\033[1;96m
+                  ⣾⣿⣿⣿⣿⣿⣿⣿⣿⣯⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⣿⣿
+                ⢺⣽⡿⣅⠹⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢿⣿⡻⣿⣻⣿⣿⣿⣁⣴⢟⡻⠻⣯⣌⣿
+          ⠔⢫⠆⣾⡿⢷⣮⣥⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠯⠝⠛⠉⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠻⣏⣀⣙⡄⢿⣿⣿⣿⣿⣿⣿⣿⢟
+       ⢀⠳⢒⣷⣿⣿⢱⡂⠜⣿⣿⣿⣿⣿⣿⣿⡿⢛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⡿⡱⠟⢀⡇⠸⣶⣿
+       ⠈⢩⣣⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⠏⡰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢻⣿⣭⡽⠟⠫⠅⣿⡿⢶⣿⠿⣻⣿⣿⣿⣿
+         ⢠⣿⣿⣿⣿⣿⣉⠻⣿⣿⣿⣿⢏⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢤⠢⣀⣀⠤⢞⢟⣟⣒⣣⠼⡯⡟⢻⡥⡒⠘⣿
+        ⢠⠋⣴⡿⡿⣿⡔⠻⣿⣿⣿⣿⣏⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⡀⣆⣐⣥⣴⣾⣿⣿⣿⣶⠊⣼⣀⣸⣧⣿⣿⣿⣽
+       ⣠⣿⣾⡟⣤⣇⠘⣿⣷⣿⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠄⢻⣿⣿⣿⣿⣿⣿⣽⣻⣿⣿⣿⣿⢿⡍⢻⣿⣿⡇
+      ⣰⠏⣾⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⠃⠀⣀⠠⠤⠐⠒⠒⠓⠒⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠐⠒⠒⠒⠤⠤⣀⠀⠘⣿⣿⣿⣿⣿⣿⣷⡟⢰⡿⠻⣟⡚⠻⣷⣿
+     ⣰⠃⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠔⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⢿⣿⣿⣿⣿⣿⢙⢲⡞⢀⡄⠈⡗⣲⣾⣿⣿⡟⠁
+⠀   ⢠⠇⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\033[1;96m⠀⠀⠀⠀⣀⣀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⣾⣿⣷⣯⣼⣿⣿⣿⣿⣿⣿⣿⠀
+   ⢀⡎⠀⠀⣯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏\033[1;91m⡀⠀⣎⣁⣤⣼⣖⣶⣦⣬⣑⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠖⣈⣭⣤⣴⣮⣭⣴⡦\033[1;96m⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣟⠿
+⠀  ⡼⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇\033[1;91m⢧⣤⣾⡿⣿⣿⣿⣿⣯⣽⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  ⣰⣾⢿⣿⣿⣿⣿⣙\033[1;96m⣿⣿⣿⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡱⣎⡟⠀
+  ⢰⠇⠀⠀⢸⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\033[1;91m⡠⣾⣿⠟⠀⣿⣿⠛⢽⣿⡿⢿⣿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠋⠧⣾⣿⡟⠻ ⣿⣿\033[1;96m⢿⣿⡟⣿⣿⣿⣿⡿⠿⣿⣿⣿⣿⣿⣿⣿⣾⣾⣿
+⠀⠀⣿⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆\033[1;91m⠀⠙⠆⠀⠙⡘⠢⡘⠿⢃⡞⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣫⠳⡙⢿⠃⡚⣻\033[1;96m⢻⣿⣿⣿⣿⠴⠐⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀
+⠀⢸⡇⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⢺⡄\033[1;91m⠀⠀⢢⡀⠙⠢⢀⣀⠡⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⠦⣄⣀⣁⠮⠃\033[1;96m⣸⣏⣺⣿⣿⠹⡎⣇⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀
+⠀⣼⡇⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠣⣷⠀\033[1;91m⠀⠉⠙⠛⠦⠲⠒⠂⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠒⠲⠦⠴⠶⠶⠊\033[1;96m⣿⠇⣼⣿⣿⡩⢛⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀
+⠀⣿⡇⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡘⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⠀⣿⣿⡏⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢞⣿⠀\033[1;92mAuthor: github.com/Azumi67  \033[1;96m  ⠀⠀⠀⠀
+  \033[96m  ______   \033[1;94m _______  \033[1;92m __    \033[1;93m  _______     \033[1;91m    __      \033[1;96m  _____  ___  
+ \033[96m  /    " \  \033[1;94m|   __ "\ \033[1;92m|" \  \033[1;93m  /"      \    \033[1;91m   /""\     \033[1;96m (\"   \|"  \ 
+ \033[96m // ____  \ \033[1;94m(. |__) :)\033[1;92m||  |  \033[1;93m|:        |   \033[1;91m  /    \   \033[1;96m  |.\\   \    |
+ \033[96m/  /    ) :)\033[1;94m|:  ____/ \033[1;92m|:  |  \033[1;93m|_____/   )   \033[1;91m /' /\  \   \033[1;96m |: \.   \\  |
+\033[96m(: (____/ // \033[1;94m(|  /     \033[1;92m|.  | \033[1;93m //       /   \033[1;91m //  __'  \  \033[1;96m |.  \    \ |
+ \033[96m\        / \033[1;94m/|__/ \   \033[1;92m/\  |\ \033[1;93m |:  __   \  \033[1;91m /   /  \\   \ \033[1;96m |    \    \|
+ \033[96m \"_____ / \033[1;94m(_______) \033[1;92m(__\_|_)\033[1;93m |__|  \___) \033[1;91m(___/    \___) \033[1;96m\___|\____\)
+"""
     print(logo)
 def main_menu():
     try:
@@ -103,7 +130,7 @@ def main_menu():
             display_logo()
             border = "\033[93m+" + "="*70 + "+\033[0m"
             content = "\033[93m║            ▌║█║▌│║▌│║▌║▌█║ \033[92mMain Menu\033[93m  ▌│║▌║▌│║║▌█║▌                  ║"
-            footer = " \033[92m            Join 69learn Telegram \033[34m@https://t.me/sixtininelearn\033[0m "
+            footer = " \033[92m            Join Opiran Telegram \033[34m@https://t.me/OPIranClub\033[0m "
 
             border_length = len(border) - 2
             centered_content = content.center(border_length)
@@ -802,7 +829,7 @@ After=network.target
 [Service]
 ExecStart=/root/{chisel_command}
 Restart=always
-RestartSec=10
+RestartSec=21600
 User=root
 
 [Install]
@@ -871,7 +898,7 @@ After=network.target
 [Service]
 ExecStart=/root/{chisel_command}
 Restart=always
-RestartSec=10
+RestartSec=21600
 User=root
 
 [Install]
@@ -945,7 +972,7 @@ After=network.target
 [Service]
 ExecStart=/root/{chisel_command}
 Restart=always
-RestartSec=10
+RestartSec=21600
 User=root
 
 [Install]
@@ -1011,7 +1038,7 @@ After=network.target
 [Service]
 ExecStart=/root/{chisel_command}
 Restart=always
-RestartSec=10
+RestartSec=21600
 User=root
 
 [Install]
@@ -1069,7 +1096,7 @@ After=network.target
 [Service]
 ExecStart=/root/{chisel_command}
 Restart=always
-RestartSec=10
+RestartSec=21600
 User=root
 
 [Install]
@@ -1146,7 +1173,7 @@ After=network.target
 [Service]
 ExecStart=/root/{chisel_command}
 Restart=always
-RestartSec=10
+RestartSec=21600
 User=root
 
 [Install]
@@ -1214,7 +1241,7 @@ After=network.target
 [Service]
 ExecStart=/root/{chisel_command}
 Restart=always
-RestartSec=10
+RestartSec=21600
 User=root
 
 [Install]
@@ -1287,7 +1314,7 @@ After=network.target
 [Service]
 ExecStart=/root/{chisel_command}
 Restart=always
-RestartSec=10
+RestartSec=21600
 User=root
 
 [Install]
@@ -1353,7 +1380,7 @@ After=network.target
 [Service]
 ExecStart=/root/{chisel_command}
 Restart=always
-RestartSec=10
+RestartSec=21600
 User=root
 
 [Install]
@@ -1431,7 +1458,7 @@ After=network.target
 [Service]
 ExecStart=/root/{chisel_command}
 Restart=always
-RestartSec=10
+RestartSec=21600
 User=root
 
 [Install]
@@ -1506,7 +1533,7 @@ After=network.target
 [Service]
 ExecStart=/root/{chisel_command}
 Restart=always
-RestartSec=10
+RestartSec=21600
 User=root
 
 [Install]
@@ -1574,7 +1601,7 @@ After=network.target
 [Service]
 ExecStart=/root/{chisel_command}
 Restart=always
-RestartSec=10
+RestartSec=21600
 User=root
 
 [Install]
@@ -1666,7 +1693,7 @@ After=network.target
 [Service]
 ExecStart=/bin/bash /etc/ping.sh
 Restart=always
-RestartSec=10
+RestartSec=21600
 User=root
 
 [Install]
@@ -1857,7 +1884,7 @@ After=network.target
 [Service]
 ExecStart=/root/{chisel_command}
 Restart=always
-RestartSec=10
+RestartSec=21600
 User=root
 
 [Install]
@@ -1933,7 +1960,7 @@ After=network.target
 [Service]
 ExecStart=/root/{chisel_command}
 Restart=always
-RestartSec=10
+RestartSec=21600
 User=root
 
 [Install]
@@ -2008,7 +2035,7 @@ After=network.target
 [Service]
 ExecStart=/root/{chisel_command}
 Restart=always
-RestartSec=10
+RestartSec=21600
 User=root
 
 [Install]
@@ -2084,7 +2111,7 @@ After=network.target
 [Service]
 ExecStart=/root/{chisel_command}
 Restart=always
-RestartSec=10
+RestartSec=21600
 User=root
 
 [Install]

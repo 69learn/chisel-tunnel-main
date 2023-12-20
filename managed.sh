@@ -19,5 +19,5 @@ else
     echo "Package colorama not found in the repositories."
 fi
 
-python3 <(curl -Ls https://raw.githubusercontent.com/Azumi67/Chisel_multipleServers/main/chisel.py --ipv4)
+python3 <(curl -Ls https://raw.githubusercontent.com/69learn/chisel-tunnel-main/main/chisel.py --ipv4)
 

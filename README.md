@@ -35,7 +35,7 @@
 
  ----------------------
 
-- **دسترسی سریع به اسکریپت** >> **[کلیک](https://github.com/Azumi67/Chisel_multipleServers#%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA-%D9%85%D9%86)**
+- **دسترسی سریع به اسکریپت** >> **[کلیک](https://github.com/Azumi67/Chisel_multipleServers/tree/main#%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA-%D9%85%D9%86)**
 - **امکانات** >> **[کلیک](https://github.com/Azumi67/Chisel_multipleServers#%D8%A7%D9%85%DA%A9%D8%A7%D9%86%D8%A7%D8%AA)**
 - **تک سرور** : 
 - **ریورس تانل - ایپی 4 - TCP - تک سرور** >> **[کلیک](https://github.com/Azumi67/Chisel_multipleServers#%D8%B1%DB%8C%D9%88%D8%B1%D8%B3-%D8%AA%D8%A7%D9%86%D9%84---%D8%A7%DB%8C%D9%BE%DB%8C-4---tcp---%D8%AA%DA%A9-%D8%B3%D8%B1%D9%88%D8%B1)**
@@ -842,7 +842,7 @@ wget "https://raw.githubusercontent.com/hawshemi/Linux-Optimizer/main/linux-opti
 ----------------
 
 ```
-sudo apt-get install python3 -y && apt-get install wget -y && apt-get install python3-pip -y && pip3 install colorama && pip3 install netifaces && apt-get install curl -y && python3 <(curl -Ls https://raw.githubusercontent.com/69learn/chisel-tunnel-main/main/chisel.py --ipv4)
+sudo apt-get install python3 -y && apt-get install wget -y && apt-get install python3-pip -y && pip3 install colorama && pip3 install netifaces && apt-get install curl -y && python3 <(curl -Ls https://raw.githubusercontent.com/Azumi67/Chisel_multipleServers/main/chisel.py --ipv4)
 ```
 
 - اگر با دستور بالا نتوانستید اسکریپت را اجرا کنید، نخست دستور زیر را اجرا نمایید و سپس دستور بالا را دوباره اجرا نمایید.
@@ -856,13 +856,13 @@ sudo apt-get install python-pip -y  &&  apt-get install python3 -y && alias pyth
  <div dir="rtl">&bull;  دستور زیر برای کسانی هست که پیش نیاز ها را در سرور، نصب شده دارند</div>
  
 ```
-python3 <(curl -Ls https://raw.githubusercontent.com/69learn/chisel-tunnel-main/main/chisel.py --ipv4)
+python3 <(curl -Ls https://raw.githubusercontent.com/Azumi67/Chisel_multipleServers/main/chisel.py --ipv4)
 ```
 --------------------------------------
  <div dir="rtl">&bull; اگر سرور شما خطای externally-managed-environment داد از دستور زیر اقدام به اجرای اسکریپت نمایید.</div>
  
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/69learn/chisel-tunnel-main/main/managed.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/Azumi67/Chisel_multipleServers/main/managed.sh)"
 ```
 
 ---------------------------------------------
