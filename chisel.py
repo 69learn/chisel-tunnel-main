@@ -779,10 +779,10 @@ def chisel_mnu():
     arch = subprocess.check_output('uname -m', shell=True).decode().strip()
 
     if arch in ['x86_64', 'amd64']:
-        chisel_download_url = "https://github.com/jpillora/chisel/releases/download/v1.9.1/chisel_1.9.1_linux_amd64.gz"
+        chisel_download_url = "https://github.com/jpillora/chisel/releases/download/v1.9.1/chisel_1.10.0_linux_amd64.gz"
         chisel_directory_name = "chisel"
     elif arch in ['aarch64', 'arm64']:
-        chisel_download_url = "https://github.com/jpillora/chisel/releases/download/v1.9.1/chisel_1.9.1_linux_arm64.gz"
+        chisel_download_url = "https://github.com/jpillora/chisel/releases/download/v1.9.1/chisel_1.10.0_linux_arm64.gz"
         chisel_directory_name = "chisel"
     else:
         display_error("\033[91mUnsupported CPU architecture: {}\033[0m".format(arch))
